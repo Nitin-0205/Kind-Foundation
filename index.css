@@ -1,0 +1,1103 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Playfair Display', serif;
+}
+
+.headCont{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgba(172, 112, 0, 0.246);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+#logo_div img{
+    width:4rem;
+    height:4rem;
+}
+.menuBtn{
+    padding: 0.2rem 0.5rem;
+    font-size: 1.2rem;
+    background-color: #ff7b00;
+    color:white;
+    border-style: none;
+    outline:none;
+    border-radius: 0.2rem;
+    display: none;
+}
+#menu{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+
+}
+#menu li{
+    list-style: none;
+}
+#menu li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color:white;
+    font-family: var(--font1);
+    padding:0.8rem 1rem;
+    font-weight:bold ;
+    letter-spacing: 1px;
+    transition: 0.2s;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+}
+#menu li a:hover{
+    padding:0.5rem 1rem;
+    border-top: 4px solid rgb(255, 102, 0);
+    border-bottom: 4px solid rgb(255, 102, 0);
+}
+.donateBtn{
+    
+    font-family: var(--font1);
+    border-style: none;
+    outline: none;
+    background-color:rgb(255, 102, 0);
+    color:white;
+    padding:0.5rem 2rem;
+    font-weight:bold ;
+    letter-spacing: 1px; 
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+.home{
+    width:100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.Home_slidDot{
+    position: absolute;
+    left:0;
+    bottom:1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:0.5rem;
+    align-items: center;
+    z-index: 10;
+}
+.Home_slidDot li{
+    list-style: none;
+}
+.Home_slidDot li button{
+    width: 2rem;
+    height:0.3rem;
+    outline: none;
+    border-style: none;
+    background-color: rgba(177, 177, 177, 0.438);
+    cursor: pointer;
+}
+.Home_slidDot li button:hover{
+    background-color:rgb(255, 102, 0);
+}
+.leftSlid:hover,.RightSlid:hover{
+
+    background-color:rgb(255, 102, 0);
+    color:white;
+}
+
+
+.home::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.home .homeImgSlid{
+    position: relative;
+    width:800%;
+    height: 100%;
+    left:0%;
+    display: flex;
+    transition: 1s;
+    /* animation:slid 30s infinite; */
+}
+@keyframes slid{
+    0%{
+        left:0;
+    }
+    10%{
+        left:0;
+    }
+    12.5%{
+        left:-100%;
+    }
+    22.5%{
+        left:-100%;
+    }
+    25%{
+        left:-200%;
+    }
+    35%{
+        left:-200%;
+    }
+    37.5%{
+        left:-300%;
+    }
+    47.5%{
+        left:-300%;
+    }
+    50%{
+        left:-400%;
+    }
+    60%{
+        left:-400%;
+    }
+    62.5%{
+        left:-500%;
+    }
+    72.5%{
+        left:-500%;
+    }
+    75%{
+        left:-600%;
+    }
+    85%{
+        left:-600%;
+    }
+    87.5%{
+        left:-700%;
+    }
+    97.5%{
+        left:-700%;
+    }
+
+
+}
+.home .homeImgSlid .homeImgCon{
+    position: relative;
+    width:14.28%;
+    height: 100%;
+}
+.home .homeImgSlid .homeImgCon img{
+    width: 100%;
+    height: 100%;
+}
+ .homeImgCon .homeImgDecpt{
+    position: absolute;
+    top:3rem;
+    left:0;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:10;
+    text-align: center;
+}
+.homeImgCon .homeImgDecpt h1{
+    font-size: 2.9rem;
+    color: white;
+    font-family:var(--font2);
+    padding:2rem 15% 0 15%;
+    letter-spacing: 3px;
+    word-spacing: 0.5rem;
+}
+.homeImgCon .homeImgDecpt p{
+    font-size: 1.2rem;
+    color: rgb(214, 214, 214);
+    font-family: var(--font1);
+    padding:2rem 20%;
+    line-height:2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 0.5rem;
+}
+
+#donatCont{
+    position: fixed;
+    top:-150%;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.452);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.closeDonate{
+    position: absolute;
+    top:2rem;
+    right:4rem;
+    color: white;
+    font-size: 3rem;
+    border-style: none;
+    outline: none;
+    background: transparent;
+    transition:transform 1s;
+    font-weight: 100;
+}
+.closeDonateclick{
+    transform: rotate(360deg);
+}
+.closeDonate:hover{
+    color: rgb(231, 37, 37);
+}
+
+.dont{
+    position: relative;
+    height: 30rem;
+    width:25rem;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 1px orangered;
+    padding: 0.5rem;
+}
+.donateimg{
+    position: relative;
+    width:100%;
+    height:10rem;
+    background:url(./images/donate.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.donateimg::after{
+    content: '';
+    width: 100%;
+    height:100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.466);
+    top:0;
+    left:0;
+    border-radius: 10px;
+}
+.donateimg h1{
+    font-size: 1.8rem;
+    color: rgb(251, 255, 0);
+    text-align: center;
+    z-index:2;
+    word-spacing: 0.5rem;
+    letter-spacing: 1px;
+    font-family: var(--font1);
+    padding: 0 1rem;
+    text-transform:lowercase;
+}
+.dont:hover{
+    box-shadow: 2px 2px 10px 1px rgb(25, 61, 221);
+
+}
+.dont input{
+    border-style: none;
+    outline: none;
+    font-size: 1.5rem;
+    padding-bottom: 0.1rem;
+    border-bottom: 2px solid gray;
+    text-indent: 2px;
+}
+.dont input:focus{
+    border-bottom: 2px solid rgb(255, 94, 0);
+
+}
+.dont button{
+    border-style: none;
+    outline: none;
+    font-size: 1rem;
+    padding-bottom: 0.1rem;
+    background-color:  rgb(40, 71, 212);
+    color:white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-family: var(--font1);
+    letter-spacing: 2px;
+    font-weight: 600;
+    word-spacing: 0.5rem;
+    margin-bottom: 1rem;
+    
+}
+.dont button i{
+    font-size: 1.8rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.dont button:hover{
+    background-color: rgb(56, 168, 28);
+}
+.dont button:active{
+    background-color: rgb(255, 102, 0);
+}
+
+
+.focusSec{
+    position: relative;
+    width:100vw;
+    font-family: var(--font1);
+    letter-spacing: 1px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+.focusSec .title1{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(255, 102, 0);
+    font-weight: bolder;
+    line-height: 4rem;
+    font-family: 'Staatliches', cursive;
+}
+.focusSec .title2{
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(255, 136, 0);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+
+
+}
+.focusSec h3{
+    text-align: center;
+    font-size: 1.5rem;
+    color:darkslategray;
+}
+.focusCardCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+.focusCardCont .card{
+    width:18rem;
+    transition: 1s;
+    cursor: pointer;
+}
+.focusCardCont .card:nth-child(even){
+    padding-top:10rem;
+}
+.card .focImgCont{
+    position: relative;
+    width:100%;
+    height: 18rem;
+}
+.card .focImgCont img{
+    width:100%;
+    height:100%;
+}
+.card .focImgCont .focImgtext{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border: 8px solid rgba(255, 102, 0, 0.616);
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgba(146, 58, 0, 0.472);;
+    opacity: 0;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card .focImgCont .focImgtext h2{
+    color:white;
+    font-weight: 800;
+}
+.focusCardCont .card:hover .focImgtext{
+    opacity: 1;
+}
+.card .cardDecpt{
+    padding: 1rem;
+    font-family: var(--font1);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5rem;
+    background-color: rgba(255, 123, 0, 0.774);
+}
+.focusCardCont .card:hover .cardDecpt{
+    color: rgb(196, 255, 255);
+}
+
+.missionSec{
+    width:100vw;
+    position:relative;
+    overflow: hidden;
+    word-spacing: 0.5rem;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+}
+.misImgCon{
+    background:url("./images/miss.jpg") no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.misImgCon .reach , .reachtot{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 4, 255, 0.274);
+}
+.reachtot{
+    background-color: rgba(0, 174, 255, 0.507);
+}
+.reach h1{
+    font-size: 5rem;
+    color: white;
+}
+
+.reachtot h1{
+    color: white;
+    font-size: 4rem;
+    font-family: var(--font2);
+
+}
+.reachtot p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(255, 193, 79);
+    font-family: var(--font1);
+}
+.reachCnt{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+}
+.missionSec .missdiv2{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.missionSec .missdiv2 .missTitle1{
+    font-size: 2rem;
+    font-family: 'Staatliches', cursive;
+    color: rgb(255, 123, 0);
+    text-align: center;
+    letter-spacing: 2px;
+}
+.missionSec .missdiv2 .missTitle2{
+    font-size: 3rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-family:var(--font2);
+    color: rgb(32, 113, 189);;
+    padding: 0 2rem;
+}
+.missionSec .missdiv2 .missTitle3{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    color: rgb(189, 82, 32);;
+    padding: 0 2rem;
+}
+.missionSec .missdiv2 .missdivTwoNum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.missionSec .missdivTwoNum .year{
+    font-size: 1.2rem;
+    color: rgb(255, 123, 0);
+    font-family: 'Staatliches', cursive;
+}
+.missionSec .missdivTwoNum .num{
+    font-size: 6.5rem;
+    font-family: 'Staatliches', cursive;
+}
+.missionSec .missdivTwoNum .num span{
+    color: #ff9d00;
+}
+.missionSec .missdivTwoNum .mil{
+    font-size: 1.2rem;
+    color: rgb(195, 88, 0);
+    font-family: 'Staatliches', cursive;
+}
+
+.missionslidCon{
+    margin-top: 2rem;
+    width:70%;
+    height:20rem;
+    position: relative;
+    overflow: hidden;
+}
+.missSld{
+    position: relative;
+    width:400%; 
+    height: 100%;
+    display: flex;
+    left:0;
+    animation: slide 10s ease infinite;
+}
+@keyframes slide{
+    0%{
+        left:0;
+    }
+    21%{
+        left:0;
+    }
+    26%{
+        left:-100%;
+    }
+    47%{
+        left:-100%;
+    }
+    53%{
+        left:-200%;
+    }
+    73%{
+        left:-200%;
+    }
+    79%{
+        left:-300%;
+    }
+    100%{
+        left:-300%;
+    }
+    
+    
+}
+.misSlddiv{
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem
+}
+.misSlddiv img{
+    width:15rem;
+    height:15rem;
+    border-radius: 50%;
+    border: 0.5rem solid rgba(189, 189, 189, 0.835);
+}
+.misSlddiv .misSldDescpt h1{
+    font-size: 2rem;
+    font-family: var(--font2);
+    font-weight: 800;
+    color: #c35800;
+}
+.misSlddiv .misSldDescpt p{
+    font-size: 1.5rem;
+    font-family: var(--font2);
+    color: rgb(56, 56, 56);
+    padding-top: 1rem;
+}
+
+.Poster{
+    position: relative;
+    width:100vw;
+    height:40rem;
+    background: url('./images/poster1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Poster::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(95, 46, 0, 0.507);
+    position: absolute;
+    top:0;
+    left:0;
+}
+.Poster h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+    font-family: var(--font2);
+    color: white;
+    text-align: center;
+    padding: 0 3rem;
+    letter-spacing: 1px;
+    word-spacing: 0.5rem;
+    margin-bottom: 3rem;
+    z-index: 2;
+}
+.Poster p{
+    font-size: 6rem;
+    color:skyblue;
+    font-family:var(--font2);
+    z-index: 2;
+    word-spacing: 2rem;
+    letter-spacing: 2px;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+
+}
+.Poster p i{
+    color:rgb(68, 209, 68);
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: whitesmoke;
+
+}
+.helpSec{
+    width:100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.helpSec h1{
+    font-size: 2rem;
+    color: white;
+    display: inline-block;
+    align-items: center;
+    background-color: #ff9d00;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-family: var(--font2);
+    letter-spacing: 1px;
+    word-spacing: 0.5rem;
+    margin: 2rem 0;
+}
+.help_con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.help_con p i{
+    font-size: 6rem;
+    color: #ff7b00;
+    transition:color 1s;
+    animation: rotate 4s ease-out infinite;
+}
+.help_con p i:hover{
+    color: rgb(38, 38, 212);
+}
+@keyframes rotate{
+    0%{
+        transform:rotateX(0deg);
+    }
+    100%{
+        transform:rotateY(360deg);
+    }
+}
+.help_con span{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    color: #ad4e00;
+    font-family: var(--font1);
+    font-weight: 800;
+}
+
+
+#footer{
+    width: 100vw;
+    height: 100%;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    overflow-x: hidden;
+}
+.footCont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap:2rem;
+}
+.footCont .footbox{
+    width:22%;
+}
+.footCont .footbox:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footCont .footbox h2{
+    font-size: 2.5rem;
+    color: #ff9d00;
+    font-family: var(--font2);
+    text-align: center;
+}
+.donatefootBtn{
+    margin-top: 2rem;
+    font-family: var(--font1);
+    border-style: none;
+    outline: none;
+    background-color:rgb(255, 102, 0);
+    color:white;
+    padding:0.5rem 2rem;
+    font-weight:bold ;
+    letter-spacing: 1px; 
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.donatefootBtn:hover{
+    background-color:white;
+    color:rgb(255, 102, 0);
+}
+.donatefootBtn:active{
+    transform: scale(110%);
+}
+.footCont .footbox .footLog{
+    width: 5rem;
+    height: 5rem;
+}
+.footCont .footbox h1{
+    display: inline-block;
+    font-size: 2rem;
+    font-family: var(--font1);
+    font-weight: 700;
+    color:white;
+    line-height: 3rem;
+    border-bottom: 2px solid orange;
+
+}
+.footCont .footbox ul{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.footCont .footbox ul li{
+    list-style: none;
+}
+.footCont .footbox ul li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color:rgb(185, 185, 185);
+    line-height: 2rem;
+}
+.footCont .footbox ul li a:hover{
+    color: white;
+}
+.footCont .footbox ul li a:active{
+    color: #ff7b00;
+}
+
+.copy{
+    margin-top: 3rem;
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: #ff7b00;
+    color: white;
+}
+.copy h4{
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 0.3rem;
+}
+
+@media (max-width:1000px){
+    #menu{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 6.4rem;
+        flex-direction: column;
+        background-color: orangered;
+        align-items: center;
+        gap:2.5rem;
+        transition: 1s ease-out;
+        left: -150%;
+    }
+    #menu li a{
+        border: none;
+    }
+    .menuBtn{
+        display:block;
+    }
+    .homeImgCon .homeImgDecpt h1{
+        font-size: 1.8rem;
+        padding:2rem 8% 0 8%;
+
+    }
+    .homeImgCon .homeImgDecpt p{
+        font-size: 1rem;
+        padding:2rem 10%;
+    }
+
+    .focusSec .title1{
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    .focusSec .title2{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    .misImgCon{
+        height: 400px;
+    }
+    .reachCnt{
+        gap: 1.5rem;
+    }
+    .misImgCon .reach , .reachtot{
+        height: 400px;
+    }
+    .missionSec .missdiv2 .missTitle1{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    .missionSec .missdiv2 .missTitle2{
+        font-size: 2rem;
+
+    }
+    .missionSec .missdivTwoNum .num{
+        font-size: 5.5rem;
+    }
+    .misSlddiv .misSldDescpt h1{
+        font-size: 1.5rem;
+    }
+    .misSlddiv .misSldDescpt p{
+        font-size: 1.2rem;
+    }
+    .Poster{
+        height:30rem;
+    }
+    .reach h1{
+        font-size: 3rem;    
+        text-align: center;
+    }
+    .reachtot h1{
+        font-size: 3rem;
+    }
+    .reachtot p{
+        font-size: 1rem;
+    }
+    .missionslidCon{
+        width:80%;
+    }
+    .Poster h1{
+        font-size: 2.5rem;
+    }
+    .Poster p{
+        font-size: 3rem;
+        word-spacing: 1rem;
+    }
+    .footCont{
+        flex-wrap: wrap;
+    }
+    .footCont .footbox:nth-child(1){
+        width:100%;
+    }
+    .footCont .footbox{
+        width:28%;
+    }
+
+}
+@media (max-width:700px){
+    .closeDonate{
+        top:1rem;
+        right:1rem;
+        font-size: 2rem;
+    }
+    .focusCardCont{
+        gap:2rem;
+    }
+    .focusCardCont .card:nth-child(even){
+        padding-top:0rem;
+    }
+    .misImgCon{
+        flex-direction: column;
+        background-position: right;
+
+    }
+    .misImgCon .reach , .reachtot{
+        width: 100%;
+        height: 50%;
+    }
+    .reach h1{
+        font-size: 2rem;
+    }
+    .reachCnt{
+        margin-top: 1rem;
+    }
+    .reachtot h1{
+        color: white;
+        font-size: 2rem;
+    }
+    .reachtot p{
+        font-size: 1rem;
+    }
+    .missionSec .missdivTwoNum .year{
+        font-size: 0.8rem;
+    }
+    .missionSec .missdivTwoNum .num{
+        font-size: 4rem;
+    }
+    .missionSec .missdivTwoNum .mil{
+        font-size: 0.8rem;
+    }
+    .misSlddiv{
+        flex-direction: column;
+    }
+    .missionslidCon{
+        height:33rem;
+        width:90%;
+
+    }
+    .misSlddiv img{
+        width:15rem;
+        height:15rem;
+    }
+    .misSlddiv .misSldDescpt h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .misSlddiv .misSldDescpt p{
+        font-size: 1.1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .Poster h1{
+        font-size: 1.5rem;
+    }
+    .Poster p{
+        font-size: 3rem;
+
+    }
+    .Poster p i{
+        padding: 1rem;
+    }
+    .helpSec h1{
+        font-size: 1.5rem;
+        padding: 0.2rem 0.5em;
+
+    }
+    .help_con p i{
+        font-size: 3rem;
+    }
+    .help_con span{
+        font-size: 1rem;
+    }
+    .footCont {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footCont .footbox{
+        width:90%;
+
+    }
+    .footCont .footbox h1{
+        display: block;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .footCont .footbox ul{
+        align-items: center;
+    }
+}
+@media (max-width:500px){
+
+    .headCont{
+        padding: 1rem;
+    }
+    .dont{
+        position: relative;
+        height: 28rem;
+        width:18rem;
+    }
+    .dont input{
+        font-size: 1rem;
+    }
+    .Home_slidDot li button{
+        width: 1rem;
+        height:0.2rem;
+    }
+    .homeImgCon .homeImgDecpt h1{
+        font-size: 1.5rem;
+        padding:2rem 2% 0 2%;
+    }
+    .homeImgCon .homeImgDecpt p{
+        font-size: 0.9rem;
+        line-height:1.5rem;
+        padding:2rem 2% 0 2%;
+    }
+    .focusSec .title1{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .focusSec .title2{
+        font-size: 1.2rem;
+        padding: 0.5rem 0.8rem;
+    }
+    .focusSec h3{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .missionSec .missdiv2 .missTitle2{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    .missionSec .missdiv2 .missTitle3{
+        font-size: 1rem;
+    }
+    .missionSec .missdiv2 .missdivTwoNum{
+        gap:1.5rem;
+    }
+    .missionSec .missdivTwoNum .year{
+        font-size: 0.8rem;
+    }
+    .missionSec .missdivTwoNum .num{
+        font-size: 2rem;
+    }
+    .missionSec .missdivTwoNum .mil{
+        font-size: 1rem;
+    }
+    .misSlddiv img{
+        width:12rem;
+        height:12rem;
+    }
+    .help_con {
+        gap: 1.5rem;
+    }
+}

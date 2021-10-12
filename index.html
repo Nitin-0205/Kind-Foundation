@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINDNESS CHARITY FOUNDATION</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="headCont">
+        <div id = 'logo_div' data-aos="flip-down"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+            <img src="./images/Umeed_logo.png" alt="Kind Logo">
+        </div>
+        <ul id="menu" data-aos="fade-right"
+        data-aos-offset="300" >
+            <li data-aos="fade-left" data-aos-delay="100"><a href="">About Us</a></li>
+            <li data-aos="fade-left" data-aos-delay="400"><a href="">Contact</a></li>
+            <li data-aos="fade-left" data-aos-delay="700"><a href="">Achievement</a></li>
+            <li data-aos="fade-left" data-aos-delay="1000" data-aos-offset="-300"><a href="">Our Work</a></li>
+        </ul>
+        <button class = 'donateBtn' onclick="donateBtn()" data-aos="zoom-in">Donate</button>
+        <button class = 'menuBtn' onclick="menuBtnClck()"><i class="fas fa-bars"></i></button>
+
+    </header>
+
+    <div id ='donatCont'>
+        <button  onclick = "closedonateCon()" class= 'closeDonate'><i class="fad fa-times"></i></button>
+        <form class="dont">
+            <div class="donateimg" data-aos="fade-down" >
+                <h1>CHANGE LIVES. SAVE LIVES.</h1>
+            </div>
+            <input data-aos="fade-right" type="text" placeholder="Email" required>
+            <input data-aos="fade-left" data-aos-delay="200" type="tel" placeholder="Phone No" required>
+            <button data-aos="fade-up" data-aos-delay="400" data-aos-offset="-300" type="submit" id="rzp-button1" class = 'paybut'>Payment <i class="far fa-donate"></i></button>
+        </form>
+    </div>
+
+    <main>
+        <div class = home>
+            <div class= 'homeImgSlid'>
+                <div class= 'homeImgCon'>
+                    <img src="./images/homeSlid1.jpg" alt="Child Getting Educated">
+                    <div class ='homeImgDecpt'>
+                        <h1 data-aos="zoom-out">AVERTING THE LEARNING CRISIS: EMPOWERING TEACHERS</h1>
+                        <p data-aos="flip-left">The World Bank, in a 2017 report, warned of a learning crisis across the world. In India, the report said, half the children in grade 5 could not read a text meant for Grade 2 children.
+                            Read more here</p>
+                    </div>
+                </div>
+                <div class= 'homeImgCon'>
+                    <img src="./images/homeSlid2.jpg" alt="Child Getting Educated">
+                    <div class ='homeImgDecpt'>
+                        <h1 data-aos="zoom-out">Are mid day meals the way to bring back children to school?</h1>
+                        <p data-aos="zoom-out">Many a times we notice poor children begging on the streets, sitting on pavements or just roaming around. A sense of pity strikes in but hardly do we ever ask ourselves some rational questions about their health, needs and education.</p>
+                    </div>
+                </div>
+                <div class= 'homeImgCon'>
+                    <img src="./images/homeSlid3.jpg" alt="Child Getting Educated">
+                    <div class ='homeImgDecpt'>
+                        <h1>Can you thrive on an empty stomach?</h1>
+                        <p>How do you define a powerful nation? Is it their natural reserves, or its financial resources, or its People? Leaders across the globe</p>
+                    </div>
+                </div>
+                <div class= 'homeImgCon'>
+                    <img src="./images/homeSlid4.jpg" alt="Child Getting Educated">
+                    <div class ='homeImgDecpt'>
+                        <h1>A pledge to nourish- with food, love and care!</h1>
+                        <p>In the middle of the 70s, when an emergency had been imposed in India, I was still a little kid living in Amritsar, blissfully unaware of the gravity of the situation around me. But the implications of the emergency soon hit me when I saw our struggle to get daily supplies. </p>
+                    </div>
+                </div>
+                <div class= 'homeImgCon'>
+                    <img src="./images/homeSlid5.jpg" alt="Child Getting Educated">
+                    <div class ='homeImgDecpt'>
+                        <h1>A pledge to build a generation of healthy leaders this World Food Day
+                        </h1>
+                        <p>As a nation, we have long battled with the problem of hunger, where a large part of our population was forced to sleep hungry every night. But today, we have reached a point, where while families are finding food in some form or another.</p>
+                    </div>
+                </div>
+                <div class= 'homeImgCon'>
+                    <img src="./images/homeSlid6.jpg" alt="Child Getting Educated">
+                    <div class ='homeImgDecpt'>
+                        <h1>The work of volunteers impacts on all our live.</h1>
+                        <p>Recently, India ranked 100th out of 119 countries on the Global Hunger Index. This against the 97th position that India held last year. Slipping down 3 places from last year, and faring worse to most other developing countries in the world sets a backdrop of the massive crsis.</p>
+                    </div>
+                </div>
+                <div class= 'homeImgCon'>
+                    <img src="./images/homeSlid7.jpg" alt="Child Getting Educated">
+                    <div class ='homeImgDecpt'>
+                        <h1>“Thousands of candles can be lighted from a single candle, and the life.” </h1>
+                        <p>This list takes into consideration the undernourishment, child mortality, child wasting and child stunting. It also appears that only about 9.6% of children between 6 to 23 months of age receive adequate diet in India.</p>
+                    </div>
+                </div>
+                <div class= 'homeImgCon'>
+                    <img src="./images/homeSlid1.jpg" alt="Child Getting Educated">
+                    <div class ='homeImgDecpt'>
+                        <h1>AVERTING THE LEARNING CRISIS: EMPOWERING TEACHERS</h1>
+                        <p>The World Bank, in a 2017 report, warned of a learning crisis across the world. In India, the report said, half the children in grade 5 could not read a text meant for Grade 2 children.
+                            Read more here</p>
+                    </div>
+                </div>
+            </div>
+           <ul class = 'Home_slidDot'>
+               <li><button onclick= "slidview(0)" class = 'homedot'></button></li>
+               <li><button onclick= "slidview(1)" class = 'homedot'></button></li>
+               <li><button onclick= "slidview(2)" class = 'homedot'></button></li>
+               <li><button onclick= "slidview(3)" class = 'homedot'></button></li>
+               <li><button onclick= "slidview(4)" class = 'homedot'></button></li>
+               <li><button onclick= "slidview(5)" class = 'homedot'></button></li>
+               <li><button onclick= "slidview(6)" class = 'homedot'></button></li>
+
+           </ul>
+        </div>
+
+        <section class  = 'focusSec'>
+            <h1 data-aos="fade-down-right" class = 'title1'>CARE India is working for over 70 years to bring</h1>
+            <h2 data-aos="zoom-in" class = 'title2'>holistic & sustainable changes</h2>
+            <h3 data-aos="fade-down-left" class = 'title3'></h3class>Our Focus Areas</h3>
+            <div class = 'focusCardCont'>
+                <div class="card" data-aos="fade-down">
+                    <div class="focImgCont">
+                        <img src="./images/focus1.jpg" alt="">
+                        <div class ='focImgtext'>
+                            <h2>Medical</h2>
+                            <p>103 million <br> Reached</p>
+                        </div>
+                    </div>
+                    <div class="cardDecpt">
+                        <p>Assisting in medical Emergency Reproductive Meternal Neonatel Child and adolscent halthcare</p>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up">
+                    <div class="focImgCont">
+                        <img src="./images/focus2.jpg" alt="">
+                        <div class ='focImgtext'>
+                            <h2>Education</h2>
+                            <p>101 million <br> Reached</p>
+                        </div>
+                    </div>
+                    <div class="cardDecpt">
+                        <p>We see education as an imperative tool for girls to realize their maximum potential by gaining crucial skills and dispositions that set them on the path of social and economic empowerment.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-down">
+                    <div class="focImgCont">
+                        <img src="./images/focus3.jpg" alt="">
+                        <div class ='focImgtext'>
+                            <h2>Farmer</h2>
+                            <p>89 million <br> Reached</p>
+                        </div>
+                    </div>
+                    <div class="cardDecpt">
+                        <p> The key approaches adopted in livelihood sector initiatives include capability enhancement, asset building, collectivisation, inclusive value chain development.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up">
+                    <div class="focImgCont">
+                        <img src="./images/focus4.jpg" alt="">
+                        <div class ='focImgtext'>
+                            <h2>Diseaster Management</h2>
+                            <p>12 million <br> Reached</p>
+                        </div>
+                    </div>
+                    <div class="cardDecpt">
+                        <p>Disaster Management initiative works to provide rapid and effective relief measures to the regions impacted by natural calamities</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class = 'missionSec'>
+            <div class="misImgCon">
+                <div class ='reach'>
+                    <h1 data-aos="zoom-out">OUR REACH</h1>
+                </div>
+                <div class ='reachtot'>
+                    <h1 data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">52.7mn</h1>
+                    <p data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                    direct reach</p>
+                    <div class ='reachCnt'>
+                        <div data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="900">
+                            <h1>18</h1>
+                            <p>States</p>
+                        </div>
+                        <div data-aos="fade-up"
+                        data-aos-delay="300"
+                        data-aos-easing="linear"
+                        data-aos-duration="900">
+                            <h1>130+</h1>
+                            <p>Districts</p>
+                        </div>
+                        <div data-aos="fade-up"
+                        data-aos-delay="400"
+                        data-aos-easing="linear"
+                        data-aos-duration="900">
+                            <h1>53</h1>
+                            <p>Programmes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = 'missdiv2'>
+                <h2 class = 'missTitle1' data-aos="fade-right">Be a real-life hero!</h2>
+                <h1 class = 'missTitle2'data-aos="fade-left">Join us in our mission of impacting 100 million people by 2030</h1>\
+                <h3 class = 'missTitle3' data-aos="fade-up-right">Without Your Help It's Won't Possible</h1>\
+
+                <div class = 'missdivTwoNum'>
+                    <div data-aos="fade-left"
+                         data-aos-duration="500">
+                        <p class ='year'>2020-2021</p>
+                        <h1 class = 'num'>30 <span><i class="fas fa-chevron-right"></i></span></h1>
+                        <p class='mil'>million</p>
+                    </div>
+                    <div data-aos="fade-left"
+                        data-aos-delay='200'
+                         data-aos-duration="500">
+                        <p class ='year'>2020-2021</p>
+                        <h1 class = 'num'>50 <span><i class="fas fa-chevron-right"></i></span></h1>
+                        <p class='mil'>million</p>
+                    </div>
+                    <div data-aos="fade-left"
+                        data-aos-delay='400'
+                        data-aos-duration="500">
+                        <p class ='year'>2020-2021</p>
+                        <h1 class = 'num'>80+</h1>
+                        <p class='mil'>million</p>
+                    </div>
+                </div>
+
+                <div class="missionslidCon">
+                    <div class="missSld">
+                        <div class="misSlddiv">
+                            <img data-aos="flip-right" src="./images/misSld1.jpeg" alt="">
+                            <div class="misSldDescpt">
+                                <h1 data-aos="fade-up">Give Girls a Chance to Learn Maths and Science</h1>
+                                <p data-aos="fade-up" data-aos-delay="300">21,370 children reached over four years in Uttar Pradesh. 7500 children reached in the last three years in Bahraich district.</p>
+                            </div>
+                        </div>
+                        <div class="misSlddiv">
+                            <img data-aos="flip-right" src="./images/misSld2.jpg" alt="">
+                            <div class="misSldDescpt">
+                                <h1 data-aos="fade-up">Save children from severe malnutrition</h1>
+                                <p data-aos="fade-up" data-aos-delay="300">21,370 children reached over four years in Uttar Pradesh. 7500 children reached in the last three years in Bahraich district.</p>
+                            </div>
+                        </div>
+                        <div class="misSlddiv">
+                            <img data-aos="flip-right" src="./images/misSld3.jpg" alt="">
+                            <div class="misSldDescpt">
+                                <h1 data-aos="fade-up">Helping communities fight COVID – 19</h1>
+                                <p data-aos="fade-up" data-aos-delay="300">21,370 children reached over four years in Uttar Pradesh. 7500 children reached in the last three years in Bahraich district.</p>
+                            </div>
+                        </div>
+                        <div class="misSlddiv">
+                            <img data-aos="flip-right" src="./images/misSld1.jpeg" alt="">
+                            <div class="misSldDescpt">
+                                <h1 data-aos="fade-up">Give Girls a Chance to Learn Maths and Science</h1>
+                                <p data-aos="fade-up" data-aos-delay="300">21,370 children reached over four years in Uttar Pradesh. 7500 children reached in the last three years in Bahraich district.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class = 'Poster'>
+            <h1 data-aos="zoom-in-right"
+            data-aos-delay='200'>“Every good act is charity. A man's true wealth hereafter is the good that he does in this world to his fellows.”</h1>
+            <p><span data-aos="fade-up-right"
+                data-aos-delay='200'>YOU</span> 
+                <span data-aos="fade-down"
+                data-aos-delay='500'>CAN</span> 
+                <span data-aos="fade-up-left"
+                data-aos-delay='800'>HELP <i class="fas fa-hands-heart"></i></span></p>
+        </section>
+        <section class = 'helpSec'>
+            <h1 data-aos="zoom-in-right">Here How You can Help</h1>
+            <div class='help_con'>
+                <div data-aos="fade-up">
+                    <p><i class="fas fa-male"></i></p>
+                    <span>Individual</span>
+                </div>
+                <div data-aos="fade-up"
+                     data-aos-delay='200'>
+                    <p><i class="fas fa-users"></i></p>
+                    <span>Committee</span>
+                </div>
+                <div data-aos="fade-up"
+                    data-aos-delay='400'>
+                    <p><i class="fas fa-university"></i></p>
+                    <span>Institute</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id = footer>
+        <div class="footCont">
+            <div class="footbox" data-aos="fade-left" data-aos-delay="100">
+                <img src="./images/Umeed_logo.png" class = 'footLog' alt="">
+                <h2 data-aos="zoom-in" data-aos-delay="100">Umeed Foundation</h2>
+                <button class = 'donatefootBtn' onclick="donateBtn()" data-aos="fade-down">Donate <i class="far fa-heartbeat"></i></button>
+            </div>
+            <div class="footbox" data-aos="fade-left" data-aos-delay="300">
+                <h1>Resources</h1>
+                <ul>
+                    <li><a href="">Moments to Milestones</a></li>
+                    <li><a href="">Innovation Briefs</a></li>
+                    <li><a href="">Impact Report</a></li>
+                </ul>
+            </div>
+            <div class="footbox" data-aos="fade-left" data-aos-delay="600">
+                <h1>Accountability</h1>
+                <ul>
+                    <li><a href="">Financial Statement</a></li>
+                    <li><a href="">Annual Report</a></li>
+                    <li><a href="">FCRA Statement</a></li>
+                    <li><a href="">Legal Compliance</a></li>
+                    <li><a href="">Sources of Fund</a></li>
+                </ul>
+            </div>
+            <div class="footbox" data-aos="fade-left" data-aos-delay="900">
+                <h1>Media</h1>
+                <ul>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href=""> Photo Gallery</a></li>
+                    <li><a href="">Videos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy" data-aos="fade-right" data-aos-offset="-300">
+            <h4 data-aos="zoom-in" data-aos-delay="200" data-aos-offset="-300">Made By Nitin Gupta with <i class="fas fa-hands-heart"></i></h4>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // values from 0 to 3000, with step 50ms
+        });
+    </script>
+    <script src = 'index.js'></script>
+
+    <!-- RAZOR PAY -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        var options = {
+            "key": "rzp_test_1SRhymVoEd7iGq", // Enter the Key ID generated from the Dashboard
+            "amount": "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+            "currency": "INR",
+            "name": "Nitin Gupta",
+            "description": "Test Transaction",
+            "image": "https://example.com/your_logo",
+            "order_id": "order_I84Vs7CV55kbUx", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+            "handler": function (response) {
+                alert(response.razorpay_payment_id);
+                alert(response.razorpay_order_id);
+                alert(response.razorpay_signature)
+            },
+            "prefill": {
+                "name": "Nitin Gupta",
+                "email": "nitin.gupta@example.com",
+                "contact": "9999999999"
+            },
+            "notes": {
+                "address": "Razorpay Corporate Office"
+            },
+            "theme": {
+                "color": "#3399cc"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.on('payment.failed', function (response) {
+            alert(response.error.code);
+            alert(response.error.description);
+            alert(response.error.source);
+            alert(response.error.step);
+            alert(response.error.reason);
+            alert(response.error.metadata.order_id);
+            alert(response.error.metadata.payment_id);
+        });
+        document.getElementById('rzp-button1').onclick = function (e) {
+            rzp1.open();
+            e.preventDefault();
+        }
+    </script>
+</body>
+    
+</html>
